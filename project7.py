@@ -32,5 +32,5 @@ def prime_generator(n):  # n - number of primes to generate
 print prime_generator(10001)
 print timeit.Timer("prime_generator(10001)", setup="from __main__ import prime_generator").timeit(1)
 
-# Congratulations, the answer you gave to problem 7 is correct. 104743 50.7462859154
+# Congratulations, the answer you gave to problem 7 is correct.
 # You are the 206222nd person to have solved this problem.
