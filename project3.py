@@ -10,6 +10,8 @@ __author__ = 'hannes'
 # A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
 # A simple but slow method of verifying the primality of a given number n is known as trial division.
 # It consists of testing whether n is a multiple of any integer between 2 and sqrt{n}.
+import timeit
+
 
 def prime_factors(n):
     i = 2
@@ -26,6 +28,7 @@ def prime_factors(n):
 
 
 print(max(prime_factors(600851475143)))
+print timeit.Timer("prime_factors(600851475143)", setup="from __main__ import prime_factors").timeit(1)
 
 # Congratulations, the answer you gave to problem 3 is correct.
 # You are the 248768th person to have solved this problem.
