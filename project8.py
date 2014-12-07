@@ -35,7 +35,6 @@ def find_greatest_prod(st, wl):  # st string of numbers wl window length
         raise Exception('Window length greater then string length!')
     for i in xrange(0, ml):
         ss = map(lambda x: int(x), list(st[i:i + wl]))
-        print str(i) + " " + str(ss)
         c = reduce(lambda x, y: x * y, ss)
         m = c if c > m else m
     return m
